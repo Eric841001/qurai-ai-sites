@@ -10,7 +10,7 @@ export default function Header() {
     { href: "#services", label: "사업영역" },
     { href: "#partners", label: "파트너십" },
     { href: "#references", label: "레퍼런스" },
-    { href: "#whyus", label: "Why Get-IT" },
+    { href: "#whyus", label: "Why QURAI" },
     { href: "#contact", label: "문의하기" },
   ];
 
