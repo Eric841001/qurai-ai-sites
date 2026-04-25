@@ -36,7 +36,7 @@ export default function Hero() {
         </p>
 
         <p className="text-base text-blue-400 font-semibold mb-10">
-          &quot;We QURAI Done, For Your Business&quot;
+          &quot;Where Intelligence Meets Enterprise&quot;
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
