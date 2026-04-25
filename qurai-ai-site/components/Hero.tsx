@@ -36,20 +36,14 @@ export default function Hero() {
         </p>
 
         <p className="text-base text-blue-400 font-semibold mb-10">
-          &quot;We QURAI Done, For Your Business&quot;
+          &quot;We Get IT Done, For Your Business&quot;
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <a
-            href="#contact"
-            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold text-lg hover:shadow-2xl hover:shadow-blue-500/30 transition-all hover:scale-105"
-          >
+          <a href="#contact" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full text-white font-semibold text-lg hover:shadow-2xl hover:shadow-blue-500/30 transition-all hover:scale-105">
             프로젝트 상담하기
           </a>
-          <a
-            href="#services"
-            className="px-8 py-4 rounded-full border border-white/20 text-white font-semibold text-lg hover:bg-white/10 transition-all"
-          >
+          <a href="#services" className="px-8 py-4 rounded-full border border-white/20 text-white font-semibold text-lg hover:bg-white/10 transition-all">
             사업영역 보기 →
           </a>
         </div>
