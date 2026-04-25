@@ -1,8 +1,19 @@
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+
 export default function Page() {
   return (
-    <main style={{ padding: "40px", fontFamily: "sans-serif" }}>
-      <h1>QURAI.AI</h1>
-      <p>Deployment Successful 🚀</p>
-    </main>
+    <>
+      <Header />
+      <Hero />
+      <Features />
+      <About />
+      <Contact />
+      <Footer />
+    </>
   );
 }
