@@ -44,7 +44,7 @@ export default function About() {
 
             <div className="gradient-border p-6 rounded-2xl text-center">
               <span className="inline-block px-3 py-1 bg-blue-600 rounded-md text-xs font-bold text-white mb-3">Slogan</span>
-              <p className="text-2xl font-bold text-blue-400">&quot;We Get IT Done, For Your Business&quot;</p>
+              <p className="text-2xl font-bold text-blue-400">&quot;Where Intelligence Meets Enterprise&quot;</p>
             </div>
           </div>
         </div>
