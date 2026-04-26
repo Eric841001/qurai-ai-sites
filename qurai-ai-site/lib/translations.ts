@@ -1,970 +1,292 @@
 export const translations = {
   en: {
-    nav: {
-      about: "About",
-      services: "Services",
-      agent365: "M365 Agent",
-      partners: "Partnership",
-      references: "References",
-      whyus: "Why QURAI",
-      contact: "Contact",
-      cta: "Get in Touch",
-    },
+    nav: { platform: "Platform", usecases: "Use Cases", arch: "Architecture", security: "Security", consulting: "Consulting", cta: "Request Briefing" },
     hero: {
-      badge: "Microsoft & Oracle Gold Partner",
-      heading1: "Big-Vendor Expertise with",
-      heading2: "Full-Stack SI Capabilities",
-      heading3: "Your Trusted ICT Partner",
-      subtitle:
-        "From consulting to deployment and operations — the expert group trusted by leading enterprises and public institutions.",
-      slogan: "Where Intelligence Meets Enterprise",
-      ctaPrimary: "Request Consultation",
-      ctaSecondary: "View Services →",
-      stats: [
-        { value: "2020", label: "Founded" },
-        { value: "₩3.6B+", label: "2025 Revenue" },
-        { value: "60+", label: "Projects Delivered" },
-        { value: "15+", label: "Tech Experts" },
-        { value: "Gold", label: "MS & Oracle Partner" },
-        { value: "Top-Tier", label: "Enterprise Clients" },
-        { value: "Full-Stack", label: "Infra to AI/DX" },
-        { value: "24h", label: "Rapid Response" },
-      ],
+      badge: "Microsoft 365 AI Agent Partner",
+      h1a: "Enterprise AI Agents", h1b: "for ", h1c: "Microsoft 365",
+      sub: "QURAI transforms enterprise decision-making with AI agents that operate natively inside Teams, SharePoint, Outlook, and the Microsoft 365 ecosystem — governed, secure, and audit-ready.",
+      cta1: "Request Executive Briefing", cta2: "Explore Platform",
+      s1v: "60+", s1l: "Enterprise Projects", s2v: "Gold", s2l: "MS & Oracle Partner", s3v: "24h", s3l: "Rapid Response",
     },
-    about: {
-      label: "About Us",
-      heading: "Company Overview &",
-      headingHighlight: "Vision",
-      bgTitle: "Background",
-      bgText:
-        "QURAI was founded in 2020 to lead digital innovation for enterprises in a rapidly evolving IT landscape. With deep expertise in global big-vendor technologies such as Microsoft and Oracle, we go beyond simple system integration to become the optimal IT partner for our clients\u0027 business success.",
-      compTitle: "Core Competency",
-      competencies: [
-        "Dual Gold Partnership",
-        "Full-Stack SI",
-        "App Development",
-        "Proven Security",
-      ],
-      visionLabel: "Vision",
-      visionTitle: "Digital Transformation Partner",
-      visionDesc:
-        "Korea\u0027s leading ICT partner that maximizes the business value of our clients",
-      missionLabel: "Mission",
-      missionTitle: "Customer Success First",
-      missionDesc:
-        "Safely and efficiently managing our clients\u0027 information assets through optimal IT infrastructure and solutions",
-      sloganLabel: "Slogan",
-      slogan: "Where Intelligence Meets Enterprise",
-    },
-    services: {
-      label: "Services",
-      heading: "6 Core",
-      headingHighlight: "Business Areas",
-      subtitle:
-        "End-to-End full-stack SI services from infrastructure to AI/DX.",
+    problems: {
+      label: "The Enterprise Challenge",
+      title: "Your Enterprise is ", highlight: "Drowning in Complexity",
+      sub: "The average enterprise loses 30% of productive capacity to fragmented workflows, manual processes, and disconnected decision-making.",
       items: [
-        {
-          icon: "🖥️",
-          title: "Infrastructure",
-          description:
-            "We design and build high-performance, high-availability IT infrastructure optimized for enterprise business environments.",
-          list: [
-            "Server / Storage / Network Integration",
-            "DB (Oracle, SQL) Deployment & Tuning",
-            "Backup & Disaster Recovery (DR)",
-            "Virtualization & Cloud Migration",
-          ],
-        },
-        {
-          icon: "⚙️",
-          title: "Solutions",
-          description:
-            "We supply and customize a wide range of enterprise solutions that maximize operational efficiency.",
-          list: [
-            "Electronic Document Management",
-            "Rule-based Process Automation",
-            "Groupware & Collaboration Tools",
-            "Data Integration (EAI/ESB)",
-          ],
-        },
-        {
-          icon: "🔒",
-          title: "Security",
-          description:
-            "We build integrated security systems that protect corporate information assets from increasingly sophisticated threats.",
-          list: [
-            "DB & System Access Control",
-            "Endpoint Security & Media Control",
-            "Security Vulnerability Assessment",
-            "Network Segmentation & Data Transfer",
-          ],
-        },
-        {
-          icon: "📋",
-          title: "ITO (IT Outsourcing)",
-          description:
-            "Our expert technical staff provides on-site or remote support to ensure stable system operations.",
-          list: [
-            "Integrated IT Operations & Maintenance",
-            "SLA-based Helpdesk Operations",
-            "Preventive Inspection & Rapid Response",
-            "IT Asset & License Management",
-          ],
-        },
-        {
-          icon: "🚀",
-          title: "Digital Transformation (DX·AX)",
-          description:
-            "We innovate the way you work through digital transformation and AI adoption, enhancing corporate competitiveness.",
-          list: [
-            "M365-based Smart Workplace",
-            "Cloud Migration (Azure, OCI)",
-            "AI Solution Consulting",
-            "M365 Agent Deployment & Governance",
-          ],
-        },
-        {
-          icon: "💻",
-          title: "Application Development",
-          description:
-            "We plan, design, and develop optimal applications tailored to your business requirements.",
-          list: [
-            ".NET / Java Enterprise Systems",
-            "Web & Mobile App Development",
-            "Legacy System Modernization",
-            "API Integration & MSA Architecture",
-          ],
-        },
+        { title: "Fragmented Workflows", desc: "Critical business processes are scattered across Teams, Outlook, SharePoint, and dozens of other tools — creating information silos and decision delays." },
+        { title: "Manual Knowledge Work", desc: "Knowledge workers spend 60% of their time searching for information, summarizing documents, and preparing reports that AI should automate." },
+        { title: "Disconnected Decisions", desc: "Executives make decisions based on outdated data because insights are buried in emails, documents, and chat threads across the organization." },
+        { title: "Governance & Security Gaps", desc: "Adopting AI without proper governance creates shadow AI risks, data leakage, and compliance violations that threaten the enterprise." },
       ],
     },
-    agent365: {
-      label: "M365 Agent",
-      heading: "Microsoft 365 Agent",
-      subtitle:
-        "The enterprise control plane that manages AI agents like employees. QURAI supports the entire process from M365 Agent adoption to governance, security, and operations.",
-      whatIsLabel: "What is M365 Agent?",
-      whatIsTitle: "Unified Management Platform for AI Agents",
-      whatIsDesc1:
-        "Microsoft Agent 365 is a control plane for enterprise AI agents. Integrated with Microsoft Entra, Purview, and Defender XDR, it provides ID management, access control, security, and observability for AI agents.",
-      whatIsDesc2:
-        "Regardless of origin — self-built agents, open-source agents, or third-party platform agents — you can deploy, organize, and manage agents under a single unified governance framework.",
-      whatIsNote:
-        "Announced at Ignite Nov 2025 | GA May 1, 2026 | $15/user/month or included in M365 E7",
-      infoBoxes: [
-        {
-          title: "Microsoft Entra Agent ID",
-          desc: "Unique digital ID for each agent",
-        },
-        {
-          title: "Defender + Purview Integration",
-          desc: "Threat detection, DLP, audit, insider risk",
-        },
-        {
-          title: "M365 Admin Center Management",
-          desc: "Agent deployment, monitoring, policy management",
-        },
-        {
-          title: "Copilot Studio Integration",
-          desc: "Build and deploy custom agents",
-        },
-      ],
-      capTitle: "Key Capabilities",
-      capabilities: [
-        {
-          icon: "📋",
-          title: "Registry",
-          desc: "Centrally manage all AI agents in your organization from a single registry. Assign agent IDs via Microsoft Entra to detect and isolate unauthorized shadow agents.",
-        },
-        {
-          icon: "🔐",
-          title: "Access Control",
-          desc: "Precisely control resource access by assigning unique Entra Agent IDs to each agent. Supports policy templates based on least-privilege principles and adaptive access control.",
-        },
-        {
-          icon: "📊",
-          title: "Visualization",
-          desc: "Monitor agent activity, connection status, and performance in real-time from a unified dashboard. Provides role-based custom reports and ROI metrics.",
-        },
-        {
-          icon: "🔗",
-          title: "Interoperability",
-          desc: "Agents can access the same Microsoft 365 apps and business systems (SharePoint, Dynamics 365, etc.) as employees. Supports agents from Microsoft, Adobe, ServiceNow, Workday, and more.",
-        },
-        {
-          icon: "🛡️",
-          title: "Security",
-          desc: "Provides lifecycle security for agents including threat detection via Microsoft Defender XDR, data protection and compliance via Purview, and runtime defense.",
-        },
-        {
-          icon: "🤖",
-          title: "Autonomous Agents",
-          desc: "Automatically execute multi-step workflows based on events without user prompts. Automates customer escalation responses, post-meeting follow-ups, compliance monitoring, and more.",
-        },
-      ],
-      useCaseTitle: "Real-World Use Cases",
-      useCases: [
-        {
-          title: "Auto Customer Escalation",
-          desc: "Detect urgent email → Retrieve customer history → Draft response → Assign agent → Teams notification",
-        },
-        {
-          title: "Meeting Follow-up Automation",
-          desc: "Meeting ends → Generate summary → Extract action items → Create Planner tasks → Send follow-up email",
-        },
-        {
-          title: "Compliance Monitoring",
-          desc: "Real-time policy violation monitoring → Auto alerts → Audit log recording → Generate remediation recommendations",
-        },
-      ],
-      serviceTitle: "QURAI\u0027s M365 Agent Service",
-      serviceDesc:
-        "As a Microsoft Gold Partner, QURAI provides end-to-end services for M365 Agent adoption — from strategic consulting and custom agent development with Copilot Studio to Agent 365 governance design, security policy establishment, and operational stabilization.",
-      serviceTags: [
-        "Adoption Strategy Consulting",
-        "Custom Agent Development",
-        "Governance Design",
-        "Security Policy Establishment",
-        "Operations & Optimization",
-        "User Training",
+    platform: {
+      label: "Platform",
+      title: "QURAI ", highlight: "M365 Agent Platform",
+      sub: "Five purpose-built AI agents that operate natively within Microsoft 365 — each designed for a specific enterprise capability domain.",
+      agents: [
+        { name: "Teams Agent", desc: "Intelligent meeting assistant that summarizes discussions, extracts action items, automates follow-ups, and provides real-time decision support.", features: ["Meeting Intelligence", "Action Item Tracking", "Real-time Q&A", "Cross-team Insights"] },
+        { name: "SharePoint Knowledge Agent", desc: "Enterprise knowledge retrieval agent that searches, synthesizes, and delivers accurate answers from your document repositories with full citation.", features: ["Semantic Search", "Document Synthesis", "Citation Tracking", "Knowledge Graph"] },
+        { name: "Outlook Workflow Agent", desc: "Email intelligence agent that prioritizes, drafts, routes, and automates email-driven workflows with contextual awareness.", features: ["Smart Prioritization", "Auto-drafting", "Workflow Routing", "Context Linking"] },
+        { name: "Executive Decision Agent", desc: "Strategic intelligence agent that aggregates cross-platform data to deliver executive dashboards, risk alerts, and AI-powered recommendations.", features: ["Executive Dashboard", "Risk Monitoring", "Predictive Analytics", "Strategy Insights"] },
+        { name: "Security & Compliance Agent", desc: "Governance agent that monitors AI usage, enforces data boundaries, manages permissions, and ensures enterprise-wide compliance.", features: ["Policy Enforcement", "DLP Monitoring", "Audit Logging", "Permission Control"] },
       ],
     },
-    partners: {
-      label: "Partnership",
-      heading: "Microsoft & Oracle",
-      headingHighlight: "Partnership",
-      subtitle:
-        "Verified expertise as Gold Partners of both global vendors.",
-    },
-    references: {
-      label: "References",
-      heading: "Industry-Specific",
-      headingHighlight: "Key References",
-      subtitle:
-        "Successfully delivering digital transformation for Korea\u0027s leading enterprises and public institutions.",
-      manufacturing: "Manufacturing",
-      financeIt: "Finance / IT Services",
-      publicSector: "Public Sector",
-    },
-    whyus: {
-      label: "Why QURAI",
-      heading: "Key",
-      headingHighlight: "Differentiators",
-      subtitle:
-        "We guarantee your business success with proven expertise and rapid response.",
-      points: [
-        {
-          num: "01",
-          title: "Dual Vendor Expertise: Microsoft & Oracle",
-          desc: "Through official partnerships with both global vendors — a rare achievement — we provide integrated technical support optimized for hybrid cloud environments.",
-          badge: "Dual Gold Partner Certified",
-        },
-        {
-          num: "02",
-          title: "Verified Senior Technical Staff",
-          desc: "We compose teams with industry-leading certified engineers to guarantee high-quality deliverables.",
-          badge: "50%+ Senior/Expert Level Staff",
-        },
-        {
-          num: "03",
-          title: "Proven Enterprise & Public Track Record",
-          desc: "We have successfully completed projects meeting the stringent security and quality standards of major conglomerates like Hyundai, Samsung, SK, and public institutions like Gyeonggi Provincial Office of Education.",
-          badge: "60+ Successful Projects in 3 Years",
-        },
-        {
-          num: "04",
-          title: "24-Hour Rapid Response",
-          desc: "With dedicated engineer assignment, we eliminate unnecessary procedures and complete analysis and first-response within 24 hours of issue reception.",
-          badge: "Zero-Wait Support Process",
-        },
-        {
-          num: "05",
-          title: "End-to-End Full-Stack SI",
-          desc: "From infrastructure (H/W) to platform, application development, AI/DX adoption, and M365 Agent governance — we provide One-Stop integrated services covering all IT domains.",
-          badge: "Infra → DX/AI → Agent Integration",
-        },
+    usecases: {
+      label: "Use Cases",
+      title: "AI Agents for the ", highlight: "C-Suite",
+      sub: "Role-specific AI agents that deliver decision intelligence tailored to each executive function.",
+      items: [
+        { role: "CEO Agent", title: "Strategic Decision Intelligence", desc: "Aggregates insights from every department into a unified executive view. Monitors KPIs, surfaces risks, and delivers AI-recommended actions for board-level decisions.", outcomes: ["360° Business View", "Risk Early Warning", "AI-Powered Recommendations"] },
+        { role: "CISO Agent", title: "Security Posture Management", desc: "Continuously monitors security signals across Microsoft 365, detects anomalies, manages incident response workflows, and ensures regulatory compliance.", outcomes: ["Threat Detection", "Compliance Automation", "Incident Response"] },
+        { role: "COO Agent", title: "Operational Excellence Automation", desc: "Optimizes cross-functional workflows, identifies bottlenecks, automates approvals, and delivers operational analytics for continuous improvement.", outcomes: ["Process Optimization", "Workflow Automation", "Performance Analytics"] },
+        { role: "Finance Agent", title: "Financial Intelligence & Reporting", desc: "Automates financial report generation, monitors budget variances, forecasts cash flow, and ensures audit-ready documentation.", outcomes: ["Automated Reporting", "Budget Monitoring", "Audit Readiness"] },
       ],
-      bottomQuote:
-        "QURAI combines the technical expertise of large SIs with the agility of small SIs — the optimal partner.",
-      quoteHighlight1: "technical expertise of large SIs",
-      quoteHighlight2: "agility of small SIs",
+    },
+    arch: {
+      label: "Architecture",
+      title: "Enterprise-Grade ", highlight: "Platform Architecture",
+      sub: "Built on Microsoft\u0027s enterprise stack with QURAI\u0027s proprietary orchestration layer for secure, governed AI agent operations.",
+    },
+    security: {
+      label: "Security & Trust",
+      title: "Enterprise Security, ", highlight: "By Design",
+      sub: "QURAI AI agents are built on Microsoft\u0027s enterprise security infrastructure with zero-trust principles at every layer.",
+      items: [
+        { title: "Zero Trust Architecture", desc: "Every agent request is verified, every access is authenticated, and every action is authorized through Microsoft Entra ID integration." },
+        { title: "Permission-Aware AI", desc: "AI agents respect existing Microsoft 365 permissions. Users only see data they are authorized to access — no data leakage across boundaries." },
+        { title: "Data Boundary Control", desc: "Enterprise data never leaves your Microsoft 365 tenant. All processing occurs within your compliance boundary with full data residency control." },
+        { title: "Audit-Ready Logging", desc: "Every AI agent action is logged, traceable, and auditable. Complete transparency for compliance teams, regulators, and internal governance." },
+        { title: "Enterprise Governance", desc: "Centralized agent management through Microsoft 365 Admin Center with role-based policies, usage analytics, and lifecycle controls." },
+        { title: "Compliance Framework", desc: "Built on Microsoft\u0027s compliance infrastructure supporting SOC 2, ISO 27001, GDPR, and industry-specific regulatory requirements." },
+      ],
+      compliance: "Built on Microsoft Azure infrastructure · SOC 2 Type II · ISO 27001 · GDPR · ISMS compliant",
+    },
+    consulting: {
+      label: "Consulting",
+      title: "End-to-End ", highlight: "Implementation",
+      sub: "As a Microsoft Gold Partner, QURAI delivers full-lifecycle consulting from assessment to managed optimization.",
+      phases: [
+        { num: "01", title: "Assessment", desc: "Evaluate your Microsoft 365 environment, identify high-impact AI automation opportunities, and build a prioritized agent roadmap.", deliverables: ["M365 Readiness Report", "Agent Opportunity Map", "ROI Projection"] },
+        { num: "02", title: "Architecture", desc: "Design the QURAI Agent Platform architecture with security policies, data flows, governance framework, and integration specifications.", deliverables: ["Solution Architecture", "Security Blueprint", "Governance Framework"] },
+        { num: "03", title: "Implementation", desc: "Build, configure, and deploy AI agents with iterative sprints, rigorous testing, and seamless integration into existing workflows.", deliverables: ["Deployed Agents", "Integration Testing", "Performance Validation"] },
+        { num: "04", title: "Adoption", desc: "Drive organizational adoption through executive sponsorship, user training, change management, and measurable success metrics.", deliverables: ["Training Program", "Change Management", "Adoption Metrics"] },
+        { num: "05", title: "Optimization", desc: "Continuously monitor, optimize, and evolve your AI agents with performance analytics, model updates, and proactive governance reviews.", deliverables: ["Performance Dashboard", "Optimization Reports", "Quarterly Reviews"] },
+      ],
+    },
+    cta: {
+      badge: "Start Your AI Agent Journey",
+      title: "Ready to Transform Your", highlight: "Enterprise with AI Agents?",
+      sub: "Schedule an executive briefing to discover how QURAI AI Agents can automate decision-making across your Microsoft 365 environment.",
+      btn1: "Request Executive Briefing", btn2: "Start M365 Agent Assessment",
+      bottom: "Microsoft Gold Partner · Oracle Gold Partner · 60+ Enterprise Projects",
     },
     contact: {
-      label: "Contact",
-      heading: "Project",
-      headingHighlight: "Consultation",
-      subtitle:
-        "Tell us about your IT project, and we\u0027ll send you an optimal solution proposal within 24 hours.",
-      companyInfo: "Company Info",
-      companyName: "QURAI Co., Ltd.",
-      companyNameKr: "(주) 큐라이",
-      englishName: "English Name",
-      founded: "Founded",
-      foundedValue: "December 2020",
-      partnershipTitle: "Partnerships",
-      formName: "Name *",
-      formNamePh: "Your name",
-      formEmail: "Email *",
-      formEmailPh: "email@company.com",
-      formCompany: "Company",
-      formCompanyPh: "Company name (optional)",
-      formMessage: "Project Details *",
-      formMessagePh:
-        "Please describe your project scope, technical requirements, timeline, etc.",
-      formSubmit: "Request Consultation",
-      thankTitle: "Thank you!",
-      thankDesc: "A representative will contact you within 24 hours.",
+      name: "Name *", namePh: "Your name",
+      email: "Email *", emailPh: "email@company.com",
+      company: "Company", companyPh: "Company name (optional)",
+      msg: "How can we help? *", msgPh: "Tell us about your AI agent needs, project scope, and timeline...",
+      submit: "Send Message", sending: "Sending...",
+      thankTitle: "Thank you!", thankDesc: "We will contact you within 24 hours.",
     },
     footer: {
-      desc: "Microsoft & Oracle big-vendor expertise with full-stack SI capabilities. Your ICT partner from consulting to deployment and operations.",
-      servicesTitle: "Services",
-      serviceLinks: [
-        "Infrastructure",
-        "Solutions",
-        "Security",
-        "IT Outsourcing",
-        "DX/AX Innovation",
-        "M365 Agent",
-      ],
-      linksTitle: "Quick Links",
-      copyright: "© 2020-2026 QURAI Co., Ltd. All rights reserved.",
-      tagline: "Microsoft & Oracle SI Partner | QURAI",
+      desc: "Enterprise AI decision intelligence through Microsoft 365 AI Agents. Secure, governed, audit-ready.",
+      col1: "Platform", col2: "Company",
+      copy: "© 2020–2026 QURAI Co., Ltd. All rights reserved.",
+      slogan: "Where Intelligence Meets Enterprise",
     },
   },
 
   ko: {
-    nav: {
-      about: "회사소개",
-      services: "사업영역",
-      agent365: "M365 Agent",
-      partners: "파트너십",
-      references: "레퍼런스",
-      whyus: "Why QURAI",
-      contact: "문의하기",
-      cta: "프로젝트 상담",
-    },
+    nav: { platform: "플랫폼", usecases: "활용 사례", arch: "아키텍처", security: "보안", consulting: "컨설팅", cta: "상담 요청" },
     hero: {
-      badge: "Microsoft & Oracle Gold Partner",
-      heading1: "빅벤더 전문성과",
-      heading2: "풀스택 SI 역량을 갖춘",
-      heading3: "ICT 전문 파트너",
-      subtitle:
-        "컨설팅부터 구축, 운영까지 — 대기업과 공공기관이 선택한 신뢰할 수 있는 전문가 그룹",
-      slogan: "Where Intelligence Meets Enterprise",
-      ctaPrimary: "프로젝트 상담하기",
-      ctaSecondary: "사업영역 보기 →",
-      stats: [
-        { value: "2020", label: "설립연도" },
-        { value: "36억+", label: "2025 예상 매출" },
-        { value: "60+", label: "프로젝트 수행" },
-        { value: "15+", label: "전문 기술 인력" },
-        { value: "Gold", label: "MS & Oracle 파트너" },
-        { value: "Top-Tier", label: "대기업·공공 고객" },
-        { value: "Full-Stack", label: "인프라 ~ AI/DX" },
-        { value: "24h", label: "즉각 대응 체계" },
-      ],
+      badge: "Microsoft 365 AI Agent 파트너",
+      h1a: "엔터프라이즈 AI 에이전트", h1b: "", h1c: "Microsoft 365",
+      sub: "큐라이는 Teams, SharePoint, Outlook 및 Microsoft 365 에코시스템 내에서 네이티브로 작동하는 AI 에이전트를 통해 엔터프라이즈 의사결정을 혁신합니다 — 거버넌스, 보안, 감사 대응 완비.",
+      cta1: "임원 브리핑 요청", cta2: "플랫폼 살펴보기",
+      s1v: "60+", s1l: "엔터프라이즈 프로젝트", s2v: "Gold", s2l: "MS & Oracle 파트너", s3v: "24h", s3l: "즉각 대응 체계",
     },
-    about: {
-      label: "About Us",
-      heading: "회사 개요 &",
-      headingHighlight: "Vision",
-      bgTitle: "설립 배경",
-      bgText:
-        "큐라이는 급변하는 IT 환경 속에서 기업의 디지털 혁신을 선도하고자 2020년 설립되었습니다. Microsoft와 Oracle 등 글로벌 빅벤더 기술에 대한 깊이 있는 이해와 풍부한 실무 경험을 바탕으로, 단순한 시스템 구축을 넘어 고객 비즈니스의 성공을 위한 최적의 IT 파트너가 되고자 합니다.",
-      compTitle: "Core Competency",
-      competencies: [
-        "Dual Gold Partnership",
-        "Full-Stack SI",
-        "App Development",
-        "Proven Security",
-      ],
-      visionLabel: "Vision",
-      visionTitle: "Digital Transformation Partner",
-      visionDesc: "고객의 비즈니스 가치를 극대화하는 대한민국 최고의 ICT 전문 파트너",
-      missionLabel: "Mission",
-      missionTitle: "Customer Success First",
-      missionDesc:
-        "최적의 IT 인프라와 솔루션 제공을 통해 고객의 정보 자산을 안전하고 효율적으로 운영",
-      sloganLabel: "Slogan",
-      slogan: "Where Intelligence Meets Enterprise",
-    },
-    services: {
-      label: "Services",
-      heading: "6대 핵심",
-      headingHighlight: "사업영역",
-      subtitle: "인프라부터 AI/DX까지, End-to-End 풀스택 SI 서비스를 제공합니다.",
+    problems: {
+      label: "엔터프라이즈 과제",
+      title: "귀사의 기업은 ", highlight: "복잡성에 빠져 있습니다",
+      sub: "평균적인 기업은 파편화된 워크플로, 수동 프로세스, 단절된 의사결정으로 인해 생산성의 30%를 잃고 있습니다.",
       items: [
-        {
-          icon: "🖥️",
-          title: "인프라 (Infra)",
-          description:
-            "기업 비즈니스 환경에 최적화된 고성능·고가용성 IT 인프라 환경을 설계하고 구축합니다.",
-          list: [
-            "서버/스토리지/네트워크 통합 구축",
-            "DB (Oracle, SQL) 구축 및 튜닝",
-            "백업 및 재해복구(DR)",
-            "가상화 및 클라우드 전환",
-          ],
-        },
-        {
-          icon: "⚙️",
-          title: "솔루션 (Solution)",
-          description:
-            "업무 효율성을 극대화하는 다양한 엔터프라이즈 솔루션을 공급하고 커스터마이징합니다.",
-          list: [
-            "전자문서 처리 및 관리",
-            "Rule 기반 업무 자동화",
-            "그룹웨어 및 협업 도구",
-            "데이터 연계 통합 (EAI/ESB)",
-          ],
-        },
-        {
-          icon: "🔒",
-          title: "보안 (Security)",
-          description:
-            "지능화되는 위협으로부터 기업의 정보 자산을 보호하는 통합 보안 체계를 구축합니다.",
-          list: [
-            "DB 및 시스템 접근제어",
-            "엔드포인트 보안 및 매체제어",
-            "보안 취약점 진단 및 조치",
-            "망분리 및 자료전송 시스템",
-          ],
-        },
-        {
-          icon: "📋",
-          title: "ITO (IT Outsourcing)",
-          description:
-            "전문 기술 인력이 상주 또는 원격으로 지원하여 안정적인 시스템 운영을 보장합니다.",
-          list: [
-            "정보시스템 통합 운영·유지보수",
-            "SLA 기반 헬프데스크 운영",
-            "장애 예방 점검 및 신속 대응",
-            "IT 자산 및 라이선스 관리",
-          ],
-        },
-        {
-          icon: "🚀",
-          title: "변화관리 (DX·AX)",
-          description:
-            "디지털 전환과 AI 도입을 통해 일하는 방식을 혁신하고 기업 경쟁력을 높입니다.",
-          list: [
-            "M365 기반 스마트워크 구축",
-            "클라우드 마이그레이션 (Azure, OCI)",
-            "AI 솔루션 도입 및 컨설팅",
-            "M365 Agent 도입 및 거버넌스",
-          ],
-        },
-        {
-          icon: "💻",
-          title: "애플리케이션 개발",
-          description:
-            "고객 비즈니스 요구사항에 맞춘 최적의 애플리케이션을 기획, 설계, 개발합니다.",
-          list: [
-            ".NET / Java 엔터프라이즈 시스템",
-            "웹/모바일 앱 개발",
-            "레거시 시스템 고도화",
-            "API 연동 및 MSA 아키텍처",
-          ],
-        },
+        { title: "파편화된 워크플로", desc: "핵심 비즈니스 프로세스가 Teams, Outlook, SharePoint 등 수십 개의 도구에 분산되어 정보 사일로와 의사결정 지연을 초래합니다." },
+        { title: "수동 지식 작업", desc: "지식 근로자는 업무 시간의 60%를 정보 검색, 문서 요약, 보고서 작성에 소비합니다. AI가 자동화해야 할 작업입니다." },
+        { title: "단절된 의사결정", desc: "경영진은 인사이트가 이메일, 문서, 채팅 스레드에 묻혀 있어 오래된 데이터를 기반으로 의사결정을 내리고 있습니다." },
+        { title: "거버넌스 및 보안 공백", desc: "적절한 거버넌스 없이 AI를 도입하면 섀도우 AI 위험, 데이터 유출, 컴플라이언스 위반이 기업을 위협합니다." },
       ],
     },
-    agent365: {
-      label: "M365 Agent",
-      heading: "Microsoft 365 Agent",
-      subtitle:
-        "AI 에이전트를 직원처럼 관리하는 엔터프라이즈 제어 플레인. 큐라이는 M365 Agent 도입부터 거버넌스, 보안, 운영까지 전 과정을 지원합니다.",
-      whatIsLabel: "What is M365 Agent?",
-      whatIsTitle: "AI 에이전트를 위한 통합 관리 플랫폼",
-      whatIsDesc1:
-        "Microsoft Agent 365는 엔터프라이즈 AI 에이전트를 위한 제어 플레인(Control Plane)입니다. Microsoft Entra, Purview, Defender XDR과 통합되어, AI 에이전트에 대한 ID 관리, 접근 제어, 보안, 관찰 가능성을 제공합니다.",
-      whatIsDesc2:
-        "자체 개발 에이전트, 오픈소스 에이전트, 서드파티 플랫폼 에이전트 등 출처에 관계없이 하나의 통합된 거버넌스 체계 아래에서 에이전트를 배포, 조직, 관리할 수 있습니다.",
-      whatIsNote:
-        "2025년 11월 Ignite에서 발표 | 2026년 5월 1일 GA | $15/user/month 또는 M365 E7 포함",
-      infoBoxes: [
-        { title: "Microsoft Entra Agent ID", desc: "에이전트별 고유 디지털 ID 부여" },
-        { title: "Defender + Purview 통합", desc: "위협 탐지, DLP, 감사, 내부 위험 관리" },
-        { title: "M365 Admin Center 관리", desc: "에이전트 배포, 모니터링, 정책 관리" },
-        { title: "Copilot Studio 연동", desc: "커스텀 에이전트 빌드 및 배포" },
-      ],
-      capTitle: "핵심 역량 (Key Capabilities)",
-      capabilities: [
-        {
-          icon: "📋",
-          title: "Registry (에이전트 등록)",
-          desc: "조직 내 모든 AI 에이전트를 하나의 레지스트리에서 중앙 관리합니다. Microsoft Entra에 에이전트 ID를 부여하여 승인되지 않은 섀도우 에이전트를 감지하고 격리할 수 있습니다.",
-        },
-        {
-          icon: "🔐",
-          title: "Access Control (접근 제어)",
-          desc: "각 에이전트에 고유한 Entra Agent ID를 부여하여 리소스 접근을 정밀하게 제어합니다. 최소 권한 원칙에 따른 정책 템플릿과 적응형 접근 제어를 지원합니다.",
-        },
-        {
-          icon: "📊",
-          title: "Visualization (시각화)",
-          desc: "통합 대시보드에서 에이전트 활동, 연결 상태, 성능을 실시간으로 모니터링합니다. 역할별 맞춤 보고서와 ROI 측정 지표를 제공합니다.",
-        },
-        {
-          icon: "🔗",
-          title: "Interoperability (상호 운용성)",
-          desc: "에이전트가 직원과 동일한 Microsoft 365 앱 및 비즈니스 시스템(SharePoint, Dynamics 365 등)에 접근할 수 있습니다. Microsoft, Adobe, ServiceNow, Workday 등 다양한 플랫폼의 에이전트를 지원합니다.",
-        },
-        {
-          icon: "🛡️",
-          title: "Security (보안)",
-          desc: "Microsoft Defender XDR을 통한 위협 탐지, Purview를 통한 데이터 보호 및 컴플라이언스, 런타임 방어까지 에이전트 전 생애주기에 걸친 보안을 제공합니다.",
-        },
-        {
-          icon: "🤖",
-          title: "Autonomous Agents (자율 에이전트)",
-          desc: "사용자 프롬프트 없이 이벤트 기반으로 다단계 워크플로를 자동 실행합니다. 고객 에스컬레이션 대응, 미팅 후속 조치, 컴플라이언스 모니터링 등을 자동화합니다.",
-        },
-      ],
-      useCaseTitle: "실제 활용 사례",
-      useCases: [
-        {
-          title: "고객 에스컬레이션 자동 대응",
-          desc: "긴급 이메일 감지 → 고객 이력 조회 → 응답 초안 작성 → 담당자 배정 → Teams 알림",
-        },
-        {
-          title: "미팅 후속 조치 자동화",
-          desc: "회의 종료 → 요약 생성 → 액션 아이템 추출 → Planner 태스크 생성 → 후속 이메일 발송",
-        },
-        {
-          title: "컴플라이언스 모니터링",
-          desc: "정책 위반 실시간 감시 → 자동 알림 → 감사 로그 기록 → 조치 권고 생성",
-        },
-      ],
-      serviceTitle: "큐라이의 M365 Agent 서비스",
-      serviceDesc:
-        "큐라이는 Microsoft Gold Partner로서 M365 Agent 도입을 위한 전략 컨설팅부터 Copilot Studio 기반 커스텀 에이전트 개발, Agent 365 거버넌스 설계, 보안 정책 수립, 그리고 운영 안정화까지 End-to-End 서비스를 제공합니다.",
-      serviceTags: [
-        "도입 전략 컨설팅",
-        "커스텀 에이전트 개발",
-        "거버넌스 설계",
-        "보안 정책 수립",
-        "운영 및 최적화",
-        "사용자 교육",
+    platform: {
+      label: "플랫폼",
+      title: "QURAI ", highlight: "M365 에이전트 플랫폼",
+      sub: "Microsoft 365 내에서 네이티브로 작동하는 5개의 목적별 AI 에이전트 — 각각 특정 엔터프라이즈 역량 영역을 위해 설계되었습니다.",
+      agents: [
+        { name: "Teams Agent", desc: "회의 내용을 요약하고, 액션 아이템을 추출하며, 후속 조치를 자동화하고, 실시간 의사결정 지원을 제공하는 지능형 미팅 어시스턴트.", features: ["회의 인텔리전스", "액션 아이템 추적", "실시간 Q&A", "크로스팀 인사이트"] },
+        { name: "SharePoint Knowledge Agent", desc: "조직의 문서 저장소에서 정확한 답변을 검색, 종합, 전달하는 엔터프라이즈 지식 검색 에이전트. 완전한 출처 인용 제공.", features: ["시맨틱 검색", "문서 종합", "출처 추적", "지식 그래프"] },
+        { name: "Outlook Workflow Agent", desc: "이메일을 우선순위화하고, 초안을 작성하며, 라우팅하고, 이메일 기반 워크플로를 컨텍스트 인식으로 자동화하는 이메일 인텔리전스 에이전트.", features: ["스마트 우선순위", "자동 초안 작성", "워크플로 라우팅", "컨텍스트 연결"] },
+        { name: "Executive Decision Agent", desc: "크로스 플랫폼 데이터를 집계하여 경영진 대시보드, 리스크 알림, AI 기반 추천을 제공하는 전략 인텔리전스 에이전트.", features: ["경영진 대시보드", "리스크 모니터링", "예측 분석", "전략 인사이트"] },
+        { name: "Security & Compliance Agent", desc: "AI 사용을 모니터링하고, 데이터 경계를 적용하며, 권한을 관리하고, 전사적 컴플라이언스를 보장하는 거버넌스 에이전트.", features: ["정책 시행", "DLP 모니터링", "감사 로깅", "권한 제어"] },
       ],
     },
-    partners: {
-      label: "Partnership",
-      heading: "Microsoft & Oracle",
-      headingHighlight: "파트너십",
-      subtitle:
-        "양대 글로벌 벤더의 Gold Partner로서 검증된 전문성을 보유하고 있습니다.",
-    },
-    references: {
-      label: "References",
-      heading: "산업군별",
-      headingHighlight: "주요 레퍼런스",
-      subtitle:
-        "대한민국 대표 기업과 공공기관의 디지털 전환을 성공적으로 수행했습니다.",
-      manufacturing: "제조 (Manufacturing)",
-      financeIt: "금융 / IT서비스",
-      publicSector: "공공기관",
-    },
-    whyus: {
-      label: "Why QURAI",
-      heading: "핵심",
-      headingHighlight: "차별화 포인트",
-      subtitle: "검증된 기술력과 신속한 대응으로 고객의 비즈니스 성공을 보장합니다.",
-      points: [
-        {
-          num: "01",
-          title: "Microsoft & Oracle 양대 벤더 전문성",
-          desc: "국내 소수 기업만이 보유한 양대 글로벌 벤더의 공식 파트너십을 통해, 하이브리드 클라우드 환경에 최적화된 통합 기술지원을 제공합니다.",
-          badge: "Dual Gold Partner 자격 보유",
-        },
-        {
-          num: "02",
-          title: "검증된 특급 기술 인력 보유",
-          desc: "업계 최고 수준의 기술 등급을 보유한 전문 엔지니어들로 팀을 구성하여 고품질 산출물을 보장합니다.",
-          badge: "전체 인력 중 특급/고급 50% 이상",
-        },
-        {
-          num: "03",
-          title: "대기업 & 공공 검증된 실적",
-          desc: "현대, 삼성, SK 등 국내 굴지의 대기업과 경기도교육청 등 까다로운 공공기관의 보안 및 품질 기준을 충족하며 성공적으로 프로젝트를 완수했습니다.",
-          badge: "최근 3년 60건+ 성공적 수행",
-        },
-        {
-          num: "04",
-          title: "24시간 이내 즉각 대응",
-          desc: "전담 엔지니어 배정을 통해 불필요한 절차를 생략하고, 이슈 접수 24시간 이내에 분석 및 1차 조치를 완료하는 신속 대응 체계를 갖추고 있습니다.",
-          badge: "Zero-Wait 기술지원 프로세스",
-        },
-        {
-          num: "05",
-          title: "End-to-End 풀스택 SI 역량",
-          desc: "인프라(H/W) 구축부터 플랫폼, 애플리케이션 개발, AI/DX 도입, M365 Agent 거버넌스까지 IT 전 영역을 아우르는 One-Stop 통합 서비스를 제공합니다.",
-          badge: "Infra → DX/AI → Agent 통합 수행",
-        },
+    usecases: {
+      label: "활용 사례",
+      title: "C-Suite를 위한 ", highlight: "AI 에이전트",
+      sub: "각 경영진 기능에 맞춤화된 의사결정 인텔리전스를 제공하는 역할별 AI 에이전트.",
+      items: [
+        { role: "CEO Agent", title: "전략적 의사결정 인텔리전스", desc: "모든 부서의 인사이트를 통합된 경영진 뷰로 집계합니다. KPI를 모니터링하고, 리스크를 표면화하며, 이사회 수준의 의사결정을 위한 AI 추천을 제공합니다.", outcomes: ["360° 비즈니스 뷰", "리스크 조기 경보", "AI 기반 추천"] },
+        { role: "CISO Agent", title: "보안 태세 관리", desc: "Microsoft 365 전반의 보안 신호를 지속적으로 모니터링하고, 이상 징후를 감지하며, 인시던트 대응 워크플로를 관리하고, 규제 컴플라이언스를 보장합니다.", outcomes: ["위협 탐지", "컴플라이언스 자동화", "인시던트 대응"] },
+        { role: "COO Agent", title: "운영 우수성 자동화", desc: "부서 간 워크플로를 최적화하고, 병목 현상을 식별하며, 승인을 자동화하고, 지속적 개선을 위한 운영 분석을 제공합니다.", outcomes: ["프로세스 최적화", "워크플로 자동화", "성과 분석"] },
+        { role: "Finance Agent", title: "재무 인텔리전스 및 보고", desc: "재무 보고서 생성을 자동화하고, 예산 차이를 모니터링하며, 현금 흐름을 예측하고, 감사 대응 문서화를 보장합니다.", outcomes: ["자동 보고", "예산 모니터링", "감사 대응"] },
       ],
-      bottomQuote:
-        "큐라이는 {h1}과 {h2}을 동시에 갖춘 최적의 파트너입니다.",
-      quoteHighlight1: "대형 SI의 기술 전문성",
-      quoteHighlight2: "중소 SI의 기민함",
+    },
+    arch: {
+      label: "아키텍처",
+      title: "엔터프라이즈 급 ", highlight: "플랫폼 아키텍처",
+      sub: "Microsoft 엔터프라이즈 스택 위에 QURAI의 독자적 오케스트레이션 레이어를 구축하여 안전하고 관리된 AI 에이전트 운영을 제공합니다.",
+    },
+    security: {
+      label: "보안 및 신뢰",
+      title: "엔터프라이즈 보안, ", highlight: "설계부터",
+      sub: "QURAI AI 에이전트는 모든 레이어에 제로 트러스트 원칙을 적용한 Microsoft 엔터프라이즈 보안 인프라 위에 구축됩니다.",
+      items: [
+        { title: "제로 트러스트 아키텍처", desc: "모든 에이전트 요청은 검증되고, 모든 접근은 인증되며, 모든 작업은 Microsoft Entra ID 통합을 통해 권한이 부여됩니다." },
+        { title: "권한 인식 AI", desc: "AI 에이전트는 기존 Microsoft 365 권한을 존중합니다. 사용자는 접근 권한이 있는 데이터만 볼 수 있으며, 경계 간 데이터 유출이 없습니다." },
+        { title: "데이터 경계 제어", desc: "엔터프라이즈 데이터는 Microsoft 365 테넌트를 벗어나지 않습니다. 모든 처리는 컴플라이언스 경계 내에서 이루어집니다." },
+        { title: "감사 대응 로깅", desc: "모든 AI 에이전트 작업은 기록되고, 추적 가능하며, 감사 가능합니다. 컴플라이언스 팀과 규제 기관을 위한 완전한 투명성." },
+        { title: "엔터프라이즈 거버넌스", desc: "Microsoft 365 관리 센터를 통한 중앙 집중식 에이전트 관리. 역할 기반 정책, 사용 분석, 수명 주기 제어." },
+        { title: "컴플라이언스 프레임워크", desc: "SOC 2, ISO 27001, GDPR 및 산업별 규제 요구사항을 지원하는 Microsoft 컴플라이언스 인프라 기반." },
+      ],
+      compliance: "Microsoft Azure 인프라 기반 · SOC 2 Type II · ISO 27001 · GDPR · ISMS 준수",
+    },
+    consulting: {
+      label: "컨설팅",
+      title: "End-to-End ", highlight: "구축 서비스",
+      sub: "Microsoft Gold Partner로서 QURAI는 평가부터 관리형 최적화까지 풀 라이프사이클 컨설팅을 제공합니다.",
+      phases: [
+        { num: "01", title: "Assessment", desc: "Microsoft 365 환경을 평가하고, 고영향 AI 자동화 기회를 식별하며, 우선순위화된 에이전트 로드맵을 수립합니다.", deliverables: ["M365 준비 보고서", "에이전트 기회 맵", "ROI 예측"] },
+        { num: "02", title: "Architecture", desc: "보안 정책, 데이터 흐름, 거버넌스 프레임워크, 통합 사양을 포함한 QURAI 에이전트 플랫폼 아키텍처를 설계합니다.", deliverables: ["솔루션 아키텍처", "보안 청사진", "거버넌스 프레임워크"] },
+        { num: "03", title: "Implementation", desc: "반복적 스프린트, 엄격한 테스트, 기존 워크플로와의 원활한 통합으로 AI 에이전트를 구축, 구성, 배포합니다.", deliverables: ["배포된 에이전트", "통합 테스트", "성능 검증"] },
+        { num: "04", title: "Adoption", desc: "경영진 후원, 사용자 교육, 변화 관리, 측정 가능한 성공 지표를 통해 조직적 도입을 추진합니다.", deliverables: ["교육 프로그램", "변화 관리", "도입 지표"] },
+        { num: "05", title: "Optimization", desc: "성능 분석, 모델 업데이트, 선제적 거버넌스 리뷰를 통해 AI 에이전트를 지속적으로 모니터링, 최적화, 발전시킵니다.", deliverables: ["성능 대시보드", "최적화 보고서", "분기별 리뷰"] },
+      ],
+    },
+    cta: {
+      badge: "AI 에이전트 여정 시작",
+      title: "AI 에이전트로 기업을", highlight: "혁신할 준비가 되셨습니까?",
+      sub: "임원 브리핑을 예약하여 QURAI AI 에이전트가 Microsoft 365 환경에서 의사결정을 어떻게 자동화할 수 있는지 확인하세요.",
+      btn1: "임원 브리핑 요청", btn2: "M365 Agent 진단 시작",
+      bottom: "Microsoft Gold Partner · Oracle Gold Partner · 60+ 엔터프라이즈 프로젝트",
     },
     contact: {
-      label: "Contact",
-      heading: "프로젝트",
-      headingHighlight: "상담 문의",
-      subtitle:
-        "귀사의 IT 프로젝트에 대해 말씀해 주시면, 24시간 이내에 최적의 솔루션 제안서를 보내드립니다.",
-      companyInfo: "회사 정보",
-      companyName: "(주) 큐라이",
-      companyNameKr: "QURAI Co., Ltd.",
-      englishName: "영문명",
-      founded: "설립",
-      foundedValue: "2020년 12월",
-      partnershipTitle: "파트너십",
-      formName: "담당자명 *",
-      formNamePh: "이름",
-      formEmail: "이메일 *",
-      formEmailPh: "email@company.com",
-      formCompany: "회사명",
-      formCompanyPh: "회사명 (선택)",
-      formMessage: "프로젝트 내용 *",
-      formMessagePh:
-        "프로젝트 규모, 기술 요구사항, 일정 등을 자유롭게 작성해 주세요...",
-      formSubmit: "상담 요청하기",
-      thankTitle: "감사합니다!",
-      thankDesc: "24시간 이내에 담당자가 연락드리겠습니다.",
+      name: "담당자명 *", namePh: "이름",
+      email: "이메일 *", emailPh: "email@company.com",
+      company: "회사명", companyPh: "회사명 (선택)",
+      msg: "문의 내용 *", msgPh: "AI 에이전트 요구사항, 프로젝트 규모, 일정 등을 자유롭게 작성해 주세요...",
+      submit: "메시지 보내기", sending: "전송 중...",
+      thankTitle: "감사합니다!", thankDesc: "24시간 이내에 담당자가 연락드리겠습니다.",
     },
     footer: {
-      desc: "Microsoft & Oracle 빅벤더 전문성과 풀스택 SI 역량을 갖춘 ICT 전문 파트너. 컨설팅부터 구축, 운영까지 고객의 디지털 전환을 함께합니다.",
-      servicesTitle: "사업영역",
-      serviceLinks: [
-        "인프라 구축",
-        "솔루션 공급",
-        "보안 체계",
-        "IT 아웃소싱",
-        "DX/AX 혁신",
-        "M365 Agent",
-      ],
-      linksTitle: "바로가기",
-      copyright: "© 2020-2026 QURAI Co., Ltd. All rights reserved.",
-      tagline: "Microsoft & Oracle 전문 SI 파트너 | (주) 큐라이",
+      desc: "Microsoft 365 AI 에이전트를 통한 엔터프라이즈 AI 의사결정 인텔리전스. 안전, 거버넌스, 감사 대응 완비.",
+      col1: "플랫폼", col2: "회사",
+      copy: "© 2020–2026 QURAI Co., Ltd. All rights reserved.",
+      slogan: "Where Intelligence Meets Enterprise",
     },
   },
 
   ja: {
-    nav: {
-      about: "会社概要",
-      services: "事業領域",
-      agent365: "M365 Agent",
-      partners: "パートナーシップ",
-      references: "実績・事例",
-      whyus: "QURAIの強み",
-      contact: "お問い合わせ",
-      cta: "ご相談",
-    },
+    nav: { platform: "プラットフォーム", usecases: "活用事例", arch: "アーキテクチャ", security: "セキュリティ", consulting: "コンサルティング", cta: "ご相談" },
     hero: {
-      badge: "Microsoft & Oracle Gold Partner",
-      heading1: "ビッグベンダーの専門性と",
-      heading2: "フルスタックSI能力を備えた",
-      heading3: "ICT専門パートナー",
-      subtitle:
-        "コンサルティングから構築、運用まで — 大手企業と公共機関が選んだ信頼できる専門家グループ",
-      slogan: "Where Intelligence Meets Enterprise",
-      ctaPrimary: "ご相談はこちら",
-      ctaSecondary: "事業領域を見る →",
-      stats: [
-        { value: "2020", label: "設立年" },
-        { value: "36億₩+", label: "2025年予想売上" },
-        { value: "60+", label: "プロジェクト実績" },
-        { value: "15+", label: "専門技術者" },
-        { value: "Gold", label: "MS & Oracle" },
-        { value: "Top-Tier", label: "大手・公共顧客" },
-        { value: "Full-Stack", label: "インフラ〜AI/DX" },
-        { value: "24h", label: "即時対応体制" },
-      ],
+      badge: "Microsoft 365 AI Agent パートナー",
+      h1a: "エンタープライズ AIエージェント", h1b: "", h1c: "Microsoft 365",
+      sub: "QURAIはTeams、SharePoint、Outlook、Microsoft 365エコシステム内でネイティブに動作するAIエージェントを通じて、エンタープライズの意思決定を革新します — ガバナンス、セキュリティ、監査対応完備。",
+      cta1: "エグゼクティブブリーフィング", cta2: "プラットフォームを見る",
+      s1v: "60+", s1l: "エンタープライズ実績", s2v: "Gold", s2l: "MS & Oracle パートナー", s3v: "24h", s3l: "即時対応体制",
     },
-    about: {
-      label: "About Us",
-      heading: "会社概要 &",
-      headingHighlight: "ビジョン",
-      bgTitle: "設立背景",
-      bgText:
-        "QURAIは急変するIT環境の中で企業のデジタル革新をリードするため、2020年に設立されました。MicrosoftやOracle等グローバルビッグベンダー技術への深い理解と豊富な実務経験を基に、単なるシステム構築を超えてお客様のビジネス成功のための最適なITパートナーを目指しています。",
-      compTitle: "コアコンピテンシー",
-      competencies: [
-        "Dual Gold Partnership",
-        "Full-Stack SI",
-        "App Development",
-        "Proven Security",
-      ],
-      visionLabel: "ビジョン",
-      visionTitle: "Digital Transformation Partner",
-      visionDesc:
-        "お客様のビジネス価値を最大化する韓国最高のICT専門パートナー",
-      missionLabel: "ミッション",
-      missionTitle: "Customer Success First",
-      missionDesc:
-        "最適なITインフラとソリューションの提供を通じて、お客様の情報資産を安全かつ効率的に運用",
-      sloganLabel: "スローガン",
-      slogan: "Where Intelligence Meets Enterprise",
-    },
-    services: {
-      label: "Services",
-      heading: "6つのコア",
-      headingHighlight: "事業領域",
-      subtitle:
-        "インフラからAI/DXまで、End-to-Endフルスタック SIサービスを提供します。",
+    problems: {
+      label: "エンタープライズの課題",
+      title: "貴社は", highlight: "複雑さに埋もれています",
+      sub: "平均的な企業は、断片化されたワークフロー、手動プロセス、分断された意思決定により、生産能力の30%を失っています。",
       items: [
-        {
-          icon: "🖥️",
-          title: "インフラストラクチャ",
-          description:
-            "企業のビジネス環境に最適化された高性能・高可用性ITインフラ環境を設計・構築します。",
-          list: [
-            "サーバー/ストレージ/ネットワーク統合構築",
-            "DB (Oracle, SQL) 構築・チューニング",
-            "バックアップ・災害復旧(DR)",
-            "仮想化・クラウド移行",
-          ],
-        },
-        {
-          icon: "⚙️",
-          title: "ソリューション",
-          description:
-            "業務効率を最大化する多様なエンタープライズソリューションを提供・カスタマイズします。",
-          list: [
-            "電子文書処理・管理",
-            "ルールベース業務自動化",
-            "グループウェア・コラボレーション",
-            "データ連携・統合 (EAI/ESB)",
-          ],
-        },
-        {
-          icon: "🔒",
-          title: "セキュリティ",
-          description:
-            "高度化する脅威から企業の情報資産を守る統合セキュリティ体制を構築します。",
-          list: [
-            "DB・システムアクセス制御",
-            "エンドポイントセキュリティ",
-            "脆弱性診断・対策",
-            "ネットワーク分離・データ転送",
-          ],
-        },
-        {
-          icon: "📋",
-          title: "ITO (ITアウトソーシング)",
-          description:
-            "専門技術者が常駐またはリモートで支援し、安定したシステム運用を保証します。",
-          list: [
-            "情報システム統合運用・保守",
-            "SLAベースヘルプデスク運用",
-            "障害予防点検・迅速対応",
-            "IT資産・ライセンス管理",
-          ],
-        },
-        {
-          icon: "🚀",
-          title: "DX・AX変革管理",
-          description:
-            "デジタル変革とAI導入により働き方を革新し、企業の競争力を高めます。",
-          list: [
-            "M365ベーススマートワーク構築",
-            "クラウドマイグレーション (Azure, OCI)",
-            "AIソリューション導入コンサルティング",
-            "M365 Agent導入・ガバナンス",
-          ],
-        },
-        {
-          icon: "💻",
-          title: "アプリケーション開発",
-          description:
-            "お客様のビジネス要件に合わせた最適なアプリケーションを企画・設計・開発します。",
-          list: [
-            ".NET / Java エンタープライズシステム",
-            "Web・モバイルアプリ開発",
-            "レガシーシステム高度化",
-            "API連携・MSAアーキテクチャ",
-          ],
-        },
+        { title: "断片化されたワークフロー", desc: "重要なビジネスプロセスがTeams、Outlook、SharePoint等に分散し、情報サイロと意思決定の遅延を引き起こしています。" },
+        { title: "手動のナレッジワーク", desc: "ナレッジワーカーは業務時間の60%を情報検索、文書要約、レポート作成に費やしています。AIが自動化すべき作業です。" },
+        { title: "分断された意思決定", desc: "インサイトがメール、文書、チャットスレッドに埋もれているため、経営陣は古いデータに基づいて意思決定を行っています。" },
+        { title: "ガバナンス・セキュリティの空白", desc: "適切なガバナンスなしにAIを導入すると、シャドウAIリスク、データ漏洩、コンプライアンス違反が企業を脅かします。" },
       ],
     },
-    agent365: {
-      label: "M365 Agent",
-      heading: "Microsoft 365 Agent",
-      subtitle:
-        "AIエージェントを社員のように管理するエンタープライズコントロールプレーン。QURAIはM365 Agentの導入からガバナンス、セキュリティ、運用まで全プロセスをサポートします。",
-      whatIsLabel: "M365 Agentとは？",
-      whatIsTitle: "AIエージェントのための統合管理プラットフォーム",
-      whatIsDesc1:
-        "Microsoft Agent 365はエンタープライズAIエージェントのためのコントロールプレーンです。Microsoft Entra、Purview、Defender XDRと統合され、AIエージェントのID管理、アクセス制御、セキュリティ、可観測性を提供します。",
-      whatIsDesc2:
-        "自社開発エージェント、オープンソースエージェント、サードパーティプラットフォームエージェントなど、出所を問わず統一されたガバナンス体制のもとでエージェントを展開・組織・管理できます。",
-      whatIsNote:
-        "2025年11月Igniteで発表 | 2026年5月1日GA | $15/user/月 またはM365 E7に含む",
-      infoBoxes: [
-        { title: "Microsoft Entra Agent ID", desc: "エージェント毎の固有デジタルID付与" },
-        { title: "Defender + Purview統合", desc: "脅威検知、DLP、監査、内部リスク管理" },
-        { title: "M365 Admin Center管理", desc: "エージェント展開・監視・ポリシー管理" },
-        { title: "Copilot Studio連携", desc: "カスタムエージェントの構築・展開" },
-      ],
-      capTitle: "主要機能 (Key Capabilities)",
-      capabilities: [
-        {
-          icon: "📋",
-          title: "レジストリ",
-          desc: "組織内のすべてのAIエージェントを一つのレジストリで一元管理します。Microsoft EntraにエージェントIDを付与し、未承認のシャドウエージェントを検知・隔離できます。",
-        },
-        {
-          icon: "🔐",
-          title: "アクセス制御",
-          desc: "各エージェントに固有のEntra Agent IDを付与してリソースアクセスを精密に制御します。最小権限の原則に基づくポリシーテンプレートと適応型アクセス制御をサポートします。",
-        },
-        {
-          icon: "📊",
-          title: "可視化",
-          desc: "統合ダッシュボードでエージェントの活動、接続状態、パフォーマンスをリアルタイムで監視します。ロール別カスタムレポートとROI指標を提供します。",
-        },
-        {
-          icon: "🔗",
-          title: "相互運用性",
-          desc: "エージェントが社員と同じMicrosoft 365アプリやビジネスシステム（SharePoint、Dynamics 365等）にアクセスできます。Microsoft、Adobe、ServiceNow、Workday等様々なプラットフォームのエージェントをサポートします。",
-        },
-        {
-          icon: "🛡️",
-          title: "セキュリティ",
-          desc: "Microsoft Defender XDRによる脅威検知、Purviewによるデータ保護・コンプライアンス、ランタイム防御まで、エージェントの全ライフサイクルにわたるセキュリティを提供します。",
-        },
-        {
-          icon: "🤖",
-          title: "自律型エージェント",
-          desc: "ユーザープロンプトなしにイベントベースで多段階ワークフローを自動実行します。顧客エスカレーション対応、ミーティングフォローアップ、コンプライアンス監視などを自動化します。",
-        },
-      ],
-      useCaseTitle: "活用事例",
-      useCases: [
-        {
-          title: "顧客エスカレーション自動対応",
-          desc: "緊急メール検知 → 顧客履歴照会 → 応答草案作成 → 担当者配置 → Teams通知",
-        },
-        {
-          title: "ミーティングフォローアップ自動化",
-          desc: "会議終了 → 要約生成 → アクションアイテム抽出 → Plannerタスク生成 → フォローアップメール送信",
-        },
-        {
-          title: "コンプライアンス監視",
-          desc: "ポリシー違反リアルタイム監視 → 自動アラート → 監査ログ記録 → 是正勧告生成",
-        },
-      ],
-      serviceTitle: "QURAIのM365 Agentサービス",
-      serviceDesc:
-        "QURAIはMicrosoft Gold PartnerとしてM365 Agent導入のための戦略コンサルティングからCopilot Studioベースのカスタムエージェント開発、Agent 365ガバナンス設計、セキュリティポリシー策定、運用安定化までEnd-to-Endサービスを提供します。",
-      serviceTags: [
-        "導入戦略コンサルティング",
-        "カスタムエージェント開発",
-        "ガバナンス設計",
-        "セキュリティポリシー策定",
-        "運用・最適化",
-        "ユーザートレーニング",
+    platform: {
+      label: "プラットフォーム",
+      title: "QURAI ", highlight: "M365エージェントプラットフォーム",
+      sub: "Microsoft 365内でネイティブに動作する5つの目的別AIエージェント — それぞれ特定のエンタープライズ能力領域のために設計。",
+      agents: [
+        { name: "Teams Agent", desc: "会議内容を要約し、アクションアイテムを抽出し、フォローアップを自動化し、リアルタイムの意思決定支援を提供するインテリジェントミーティングアシスタント。", features: ["会議インテリジェンス", "アクションアイテム追跡", "リアルタイムQ&A", "クロスチームインサイト"] },
+        { name: "SharePoint Knowledge Agent", desc: "組織のドキュメントリポジトリから正確な回答を検索・統合・配信するエンタープライズナレッジ検索エージェント。完全な引用付き。", features: ["セマンティック検索", "文書統合", "引用追跡", "ナレッジグラフ"] },
+        { name: "Outlook Workflow Agent", desc: "メールの優先順位付け、下書き作成、ルーティング、メールベースのワークフロー自動化をコンテキスト認識で行うメールインテリジェンスエージェント。", features: ["スマート優先順位", "自動下書き", "ワークフロールーティング", "コンテキスト連携"] },
+        { name: "Executive Decision Agent", desc: "クロスプラットフォームデータを集約し、エグゼクティブダッシュボード、リスクアラート、AI推奨を提供する戦略インテリジェンスエージェント。", features: ["経営ダッシュボード", "リスクモニタリング", "予測分析", "戦略インサイト"] },
+        { name: "Security & Compliance Agent", desc: "AI使用を監視し、データ境界を適用し、権限を管理し、全社的コンプライアンスを確保するガバナンスエージェント。", features: ["ポリシー施行", "DLPモニタリング", "監査ログ", "権限制御"] },
       ],
     },
-    partners: {
-      label: "パートナーシップ",
-      heading: "Microsoft & Oracle",
-      headingHighlight: "パートナーシップ",
-      subtitle:
-        "両グローバルベンダーのGold Partnerとして検証された専門性を有しています。",
-    },
-    references: {
-      label: "実績・事例",
-      heading: "業種別",
-      headingHighlight: "主要実績",
-      subtitle:
-        "韓国を代表する企業と公共機関のデジタル変革を成功裏に遂行しました。",
-      manufacturing: "製造業",
-      financeIt: "金融 / ITサービス",
-      publicSector: "公共機関",
-    },
-    whyus: {
-      label: "QURAIの強み",
-      heading: "コア",
-      headingHighlight: "差別化ポイント",
-      subtitle:
-        "検証された技術力と迅速な対応でお客様のビジネス成功を保証します。",
-      points: [
-        {
-          num: "01",
-          title: "Microsoft & Oracle 両ベンダーの専門性",
-          desc: "国内少数の企業のみが保有する両グローバルベンダーの公式パートナーシップを通じて、ハイブリッドクラウド環境に最適化された統合技術支援を提供します。",
-          badge: "Dual Gold Partner認定",
-        },
-        {
-          num: "02",
-          title: "検証されたシニア技術者保有",
-          desc: "業界最高水準の技術等級を保有する専門エンジニアでチームを構成し、高品質な成果物を保証します。",
-          badge: "全体人員の50%以上がシニア・エキスパート",
-        },
-        {
-          num: "03",
-          title: "大手企業・公共の実証された実績",
-          desc: "現代、サムスン、SK等韓国有数の大手企業と京畿道教育庁等厳格な公共機関のセキュリティ・品質基準を満たし、プロジェクトを成功裏に完遂しました。",
-          badge: "直近3年間60件以上の成功実績",
-        },
-        {
-          num: "04",
-          title: "24時間以内即時対応",
-          desc: "専任エンジニアの配置により不要な手続きを省略し、課題受付から24時間以内に分析・一次対応を完了する迅速対応体制を整えています。",
-          badge: "Zero-Wait技術サポートプロセス",
-        },
-        {
-          num: "05",
-          title: "End-to-End フルスタックSI能力",
-          desc: "インフラ(H/W)構築からプラットフォーム、アプリケーション開発、AI/DX導入、M365 Agentガバナンスまで全IT領域をカバーするワンストップ統合サービスを提供します。",
-          badge: "Infra → DX/AI → Agent 統合遂行",
-        },
+    usecases: {
+      label: "活用事例",
+      title: "C-Suiteのための", highlight: "AIエージェント",
+      sub: "各経営機能に合わせた意思決定インテリジェンスを提供する役割別AIエージェント。",
+      items: [
+        { role: "CEO Agent", title: "戦略的意思決定インテリジェンス", desc: "全部門のインサイトを統合されたエグゼクティブビューに集約。KPIを監視し、リスクを表面化し、取締役会レベルの意思決定のためのAI推奨を提供。", outcomes: ["360°ビジネスビュー", "リスク早期警告", "AI推奨"] },
+        { role: "CISO Agent", title: "セキュリティ態勢管理", desc: "Microsoft 365全体のセキュリティシグナルを継続的に監視し、異常を検知し、インシデント対応ワークフローを管理し、規制コンプライアンスを確保。", outcomes: ["脅威検知", "コンプライアンス自動化", "インシデント対応"] },
+        { role: "COO Agent", title: "オペレーショナルエクセレンス自動化", desc: "部門横断ワークフローを最適化し、ボトルネックを特定し、承認を自動化し、継続的改善のための運用分析を提供。", outcomes: ["プロセス最適化", "ワークフロー自動化", "パフォーマンス分析"] },
+        { role: "Finance Agent", title: "財務インテリジェンス・レポーティング", desc: "財務レポート生成を自動化し、予算差異を監視し、キャッシュフローを予測し、監査対応ドキュメントを確保。", outcomes: ["自動レポート", "予算モニタリング", "監査対応"] },
       ],
-      bottomQuote:
-        "QURAIは{h1}と{h2}を兼ね備えた最適なパートナーです。",
-      quoteHighlight1: "大手SIの技術専門性",
-      quoteHighlight2: "中小SIの機敏さ",
+    },
+    arch: {
+      label: "アーキテクチャ",
+      title: "エンタープライズグレード", highlight: "プラットフォームアーキテクチャ",
+      sub: "MicrosoftエンタープライズスタックにQURAI独自のオーケストレーションレイヤーを構築し、安全で管理されたAIエージェント運用を提供。",
+    },
+    security: {
+      label: "セキュリティ・信頼",
+      title: "エンタープライズセキュリティ、", highlight: "設計から",
+      sub: "QURAI AIエージェントは全レイヤーにゼロトラスト原則を適用したMicrosoftエンタープライズセキュリティインフラ上に構築。",
+      items: [
+        { title: "ゼロトラストアーキテクチャ", desc: "すべてのエージェントリクエストは検証され、すべてのアクセスは認証され、すべてのアクションはMicrosoft Entra ID統合を通じて権限付与。" },
+        { title: "権限認識AI", desc: "AIエージェントは既存のMicrosoft 365権限を尊重。ユーザーはアクセス権限のあるデータのみ閲覧可能 — 境界間のデータ漏洩なし。" },
+        { title: "データ境界制御", desc: "エンタープライズデータはMicrosoft 365テナントを離れません。すべての処理はコンプライアンス境界内で実行。" },
+        { title: "監査対応ログ", desc: "すべてのAIエージェントアクションは記録・追跡・監査可能。コンプライアンスチームと規制当局のための完全な透明性。" },
+        { title: "エンタープライズガバナンス", desc: "Microsoft 365管理センターによる一元的エージェント管理。ロールベースポリシー、使用分析、ライフサイクル制御。" },
+        { title: "コンプライアンスフレームワーク", desc: "SOC 2、ISO 27001、GDPR、業界固有の規制要件をサポートするMicrosoftコンプライアンスインフラ基盤。" },
+      ],
+      compliance: "Microsoft Azureインフラ基盤 · SOC 2 Type II · ISO 27001 · GDPR · ISMS準拠",
+    },
+    consulting: {
+      label: "コンサルティング",
+      title: "End-to-End ", highlight: "導入サービス",
+      sub: "Microsoft Gold Partnerとして、QURAIはアセスメントからマネージド最適化まで、フルライフサイクルコンサルティングを提供。",
+      phases: [
+        { num: "01", title: "Assessment", desc: "Microsoft 365環境を評価し、高インパクトAI自動化機会を特定し、優先順位付きエージェントロードマップを構築。", deliverables: ["M365準備レポート", "エージェント機会マップ", "ROI予測"] },
+        { num: "02", title: "Architecture", desc: "セキュリティポリシー、データフロー、ガバナンスフレームワーク、統合仕様を含むQURAIエージェントプラットフォームアーキテクチャを設計。", deliverables: ["ソリューションアーキテクチャ", "セキュリティ設計書", "ガバナンスフレームワーク"] },
+        { num: "03", title: "Implementation", desc: "反復スプリント、厳格なテスト、既存ワークフローとのシームレスな統合でAIエージェントを構築・設定・展開。", deliverables: ["展開エージェント", "統合テスト", "パフォーマンス検証"] },
+        { num: "04", title: "Adoption", desc: "エグゼクティブスポンサーシップ、ユーザートレーニング、チェンジマネジメント、測定可能な成功指標を通じて組織的導入を推進。", deliverables: ["トレーニングプログラム", "チェンジマネジメント", "導入指標"] },
+        { num: "05", title: "Optimization", desc: "パフォーマンス分析、モデル更新、先制的ガバナンスレビューでAIエージェントを継続的に監視・最適化・進化。", deliverables: ["パフォーマンスダッシュボード", "最適化レポート", "四半期レビュー"] },
+      ],
+    },
+    cta: {
+      badge: "AIエージェントジャーニー開始",
+      title: "AIエージェントで企業を", highlight: "革新する準備はできていますか？",
+      sub: "エグゼクティブブリーフィングをスケジュールして、QURAI AIエージェントがMicrosoft 365環境での意思決定をどう自動化できるかをご確認ください。",
+      btn1: "エグゼクティブブリーフィング", btn2: "M365 Agent診断開始",
+      bottom: "Microsoft Gold Partner · Oracle Gold Partner · 60+ エンタープライズ実績",
     },
     contact: {
-      label: "お問い合わせ",
-      heading: "プロジェクト",
-      headingHighlight: "ご相談",
-      subtitle:
-        "貴社のITプロジェクトについてお聞かせください。24時間以内に最適なソリューション提案書をお送りします。",
-      companyInfo: "会社情報",
-      companyName: "QURAI Co., Ltd.",
-      companyNameKr: "(주) 큐라이",
-      englishName: "英語名",
-      founded: "設立",
-      foundedValue: "2020年12月",
-      partnershipTitle: "パートナーシップ",
-      formName: "担当者名 *",
-      formNamePh: "お名前",
-      formEmail: "メール *",
-      formEmailPh: "email@company.com",
-      formCompany: "会社名",
-      formCompanyPh: "会社名（任意）",
-      formMessage: "プロジェクト内容 *",
-      formMessagePh:
-        "プロジェクト規模、技術要件、スケジュール等をご自由にご記入ください...",
-      formSubmit: "ご相談を申し込む",
-      thankTitle: "ありがとうございます！",
-      thankDesc: "24時間以内に担当者よりご連絡いたします。",
+      name: "担当者名 *", namePh: "お名前",
+      email: "メール *", emailPh: "email@company.com",
+      company: "会社名", companyPh: "会社名（任意）",
+      msg: "お問い合わせ内容 *", msgPh: "AIエージェントの要件、プロジェクト規模、スケジュール等をご自由にご記入ください...",
+      submit: "メッセージ送信", sending: "送信中...",
+      thankTitle: "ありがとうございます！", thankDesc: "24時間以内に担当者よりご連絡いたします。",
     },
     footer: {
-      desc: "Microsoft & Oracleビッグベンダーの専門性とフルスタックSI能力を備えたICT専門パートナー。コンサルティングから構築、運用までお客様のデジタル変革を共に歩みます。",
-      servicesTitle: "事業領域",
-      serviceLinks: [
-        "インフラ構築",
-        "ソリューション",
-        "セキュリティ",
-        "ITアウトソーシング",
-        "DX/AX革新",
-        "M365 Agent",
-      ],
-      linksTitle: "クイックリンク",
-      copyright: "© 2020-2026 QURAI Co., Ltd. All rights reserved.",
-      tagline: "Microsoft & Oracle SI Partner | QURAI",
+      desc: "Microsoft 365 AIエージェントによるエンタープライズAI意思決定インテリジェンス。安全、ガバナンス、監査対応完備。",
+      col1: "プラットフォーム", col2: "会社",
+      copy: "© 2020–2026 QURAI Co., Ltd. All rights reserved.",
+      slogan: "Where Intelligence Meets Enterprise",
     },
   },
 };
