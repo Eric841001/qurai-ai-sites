@@ -26,24 +26,33 @@ const publicSector = [
   { name: "동행복권 (Dong Haeng Lottery)", period: "Ongoing", desc_en: "National Lottery System DB Support", desc_ko: "대국민 복권 시스템 DB 기술지원", desc_ja: "国民向け宝くじシステムDB技術支援", tags: ["Oracle DB", "24/7"] },
 ];
 
+interface RefItem {
+  name: string;
+  period: string;
+  desc_en: string;
+  desc_ko: string;
+  desc_ja: string;
+  tags: string[];
+}
+
 export default function References() {
   const { lang, t } = useLanguage();
 
-  const getDesc = (ref: { desc_en: string; desc_ko: string; desc_ja: string }) => {
-    if (lang === "ko") return ref.desc_ko;
-    if (lang === "ja") return ref.desc_ja;
-    return ref.desc_en;
+  const getDesc = (item: RefItem) => {
+    if (lang === "ko") return item.desc_ko;
+    if (lang === "ja") return item.desc_ja;
+    return item.desc_en;
   };
 
-  const RefCard = ({ ref: r }: { ref: typeof manufacturing[0] }) => (
+  const RefCard = ({ item }: { item: RefItem }) => (
     <div className="gradient-border card-hover p-5 rounded-xl">
       <div className="flex items-start justify-between mb-2">
-        <h4 className="text-white font-bold">{r.name}</h4>
-        <span className="text-xs text-blue-400 font-semibold whitespace-nowrap ml-2">{r.period}</span>
+        <h4 className="text-white font-bold">{item.name}</h4>
+        <span className="text-xs text-blue-400 font-semibold whitespace-nowrap ml-2">{item.period}</span>
       </div>
-      <p className="text-gray-400 text-sm mb-3">{getDesc(r)}</p>
+      <p className="text-gray-400 text-sm mb-3">{getDesc(item)}</p>
       <div className="flex flex-wrap gap-1.5">
-        {r.tags.map((tag, i) => (
+        {item.tags.map((tag, i) => (
           <span key={i} className="px-2 py-0.5 bg-blue-600/20 border border-blue-500/20 rounded text-blue-300 text-xs">{tag}</span>
         ))}
       </div>
@@ -66,7 +75,7 @@ export default function References() {
             <span className="text-2xl">🏭</span> {t.references.manufacturing}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {manufacturing.map((r, i) => <RefCard key={i} ref={r} />)}
+            {manufacturing.map((item, i) => <RefCard key={i} item={item} />)}
           </div>
         </div>
 
@@ -75,7 +84,7 @@ export default function References() {
             <span className="text-2xl">🏦</span> {t.references.financeIt}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...finance, ...itService].map((r, i) => <RefCard key={i} ref={r} />)}
+            {[...finance, ...itService].map((item, i) => <RefCard key={i} item={item} />)}
           </div>
         </div>
 
@@ -84,7 +93,7 @@ export default function References() {
             <span className="text-2xl">🏛️</span> {t.references.publicSector}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {publicSector.map((r, i) => <RefCard key={i} ref={r} />)}
+            {publicSector.map((item, i) => <RefCard key={i} item={item} />)}
           </div>
         </div>
       </div>
