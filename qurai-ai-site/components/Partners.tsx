@@ -1,26 +1,32 @@
+"use client";
+
+import { useLanguage } from "../lib/i18n";
+
 const msItems = {
   "Cloud & Modern Work": ["Microsoft 365 Deploy", "Azure Cloud Transition", "Intune & EMS", "Teams Collaboration"],
-  "Infrastructure & Security": ["AD / Entra ID 구축", "MECM (SCCM) 운영", "AIP 보안 적용", "Windows Server"],
+  "Infrastructure & Security": ["AD / Entra ID", "MECM (SCCM)", "AIP Security", "Windows Server"],
   "Dev & Data": ["SQL Server Tuning", "Visual Studio Dev"],
   "AI & Agent": ["M365 Copilot", "Agent 365", "Copilot Studio", "Power Platform"],
 };
 
 const oracleItems = {
-  "Database & Systems": ["Oracle DB 19c/21c", "Exadata 구축/운영", "ODA (Appliance)", "Data Warehousing"],
-  "Oracle Cloud (OCI)": ["OCI Migration (IaaS)", "Oracle PaaS & SaaS", "Hybrid Cloud 구성", "Cloud Backup & DR"],
+  "Database & Systems": ["Oracle DB 19c/21c", "Exadata", "ODA (Appliance)", "Data Warehousing"],
+  "Oracle Cloud (OCI)": ["OCI Migration (IaaS)", "Oracle PaaS & SaaS", "Hybrid Cloud", "Cloud Backup & DR"],
   "Middleware & Integration": ["WebLogic Server", "GoldenGate (CDC)"],
 };
 
 export default function Partners() {
+  const { t } = useLanguage();
+
   return (
     <section id="partners" className="relative py-32 bg-grid">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-semibold text-blue-400 tracking-widest uppercase">Partnership</span>
+          <span className="text-sm font-semibold text-blue-400 tracking-widest uppercase">{t.partners.label}</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            <span className="gradient-text">Microsoft &amp; Oracle</span> 파트너십
+            <span className="gradient-text">{t.partners.heading}</span> {t.partners.headingHighlight}
           </h2>
-          <p className="text-gray-400 text-lg">양대 글로벌 벤더의 Gold Partner로서 검증된 전문성을 보유하고 있습니다.</p>
+          <p className="text-gray-400 text-lg">{t.partners.subtitle}</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -34,9 +40,7 @@ export default function Partners() {
                 <h4 className="text-blue-400 font-semibold text-sm mb-2">{category}</h4>
                 <div className="flex flex-wrap gap-2">
                   {items.map((item, i) => (
-                    <span key={i} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-xs">
-                      {item}
-                    </span>
+                    <span key={i} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-xs">{item}</span>
                   ))}
                 </div>
               </div>
@@ -53,9 +57,7 @@ export default function Partners() {
                 <h4 className="text-orange-400 font-semibold text-sm mb-2">{category}</h4>
                 <div className="flex flex-wrap gap-2">
                   {items.map((item, i) => (
-                    <span key={i} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-xs">
-                      {item}
-                    </span>
+                    <span key={i} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-xs">{item}</span>
                   ))}
                 </div>
               </div>
