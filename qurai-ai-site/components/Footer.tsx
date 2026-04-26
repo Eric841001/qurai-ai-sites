@@ -1,4 +1,18 @@
+"use client";
+
+import { useLanguage } from "../lib/i18n";
+
 export default function Footer() {
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { href: "#about", label: t.nav.about },
+    { href: "#partners", label: t.nav.partners },
+    { href: "#references", label: t.nav.references },
+    { href: "#whyus", label: t.nav.whyus },
+    { href: "#contact", label: t.nav.contact },
+  ];
+
   return (
     <footer className="border-t border-white/5 py-12">
       <div className="max-w-7xl mx-auto px-6">
@@ -10,49 +24,7 @@ export default function Footer() {
               </div>
               <span className="text-lg font-bold gradient-text">QURAI</span>
             </div>
-            <p className="text-gray-500 text-sm max-w-xs leading-relaxed mb-4">
-              Microsoft &amp; Oracle 빅벤더 전문성과 풀스택 SI 역량을 갖춘 ICT 전문 파트너.
-              컨설팅부터 구축, 운영까지 고객의 디지털 전환을 함께합니다.
-            </p>
+            <p className="text-gray-500 text-sm max-w-xs leading-relaxed mb-4">{t.footer.desc}</p>
             <div className="flex gap-2">
               <span className="px-2 py-1 bg-blue-600/20 rounded text-blue-300 text-xs font-bold">Microsoft Gold</span>
-              <span className="px-2 py-1 bg-orange-600/20 rounded text-orange-300 text-xs font-bold">Oracle Gold</span>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold mb-4">사업영역</h4>
-            <ul className="space-y-2">
-              <li><a href="#services" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">인프라 구축</a></li>
-              <li><a href="#services" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">솔루션 공급</a></li>
-              <li><a href="#services" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">보안 체계</a></li>
-              <li><a href="#services" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">IT 아웃소싱</a></li>
-              <li><a href="#services" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">DX/AX 혁신</a></li>
-              <li><a href="#agent365" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">M365 Agent</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold mb-4">바로가기</h4>
-            <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">회사소개</a></li>
-              <li><a href="#partners" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">파트너십</a></li>
-              <li><a href="#references" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">레퍼런스</a></li>
-              <li><a href="#whyus" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">Why QURAI</a></li>
-              <li><a href="#contact" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">문의하기</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-sm">
-            &copy; 2020-2026 QURAI Co., Ltd. All rights reserved.
-          </p>
-          <p className="text-gray-600 text-xs">
-            Microsoft &amp; Oracle 전문 SI 파트너 | (주) 큐라이
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+              <span className="px-2 py-1 bg-orange-600/20
