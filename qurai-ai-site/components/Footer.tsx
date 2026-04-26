@@ -27,4 +27,42 @@ export default function Footer() {
             <p className="text-gray-500 text-sm max-w-xs leading-relaxed mb-4">{t.footer.desc}</p>
             <div className="flex gap-2">
               <span className="px-2 py-1 bg-blue-600/20 rounded text-blue-300 text-xs font-bold">Microsoft Gold</span>
-              <span className="px-2 py-1 bg-orange-600/20
+              <span className="px-2 py-1 bg-orange-600/20 rounded text-orange-300 text-xs font-bold">Oracle Gold</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-4">{t.footer.servicesTitle}</h4>
+            <ul className="space-y-2">
+              {t.footer.serviceLinks.map((link, i) => (
+                <li key={i}>
+                  <a href={i === 5 ? "#agent365" : "#services"} className="text-gray-500 hover:text-gray-300 text-sm transition-colors">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-4">{t.footer.linksTitle}</h4>
+            <ul className="space-y-2">
+              {navLinks.map((link, i) => (
+                <li key={i}>
+                  <a href={link.href} className="text-gray-500 hover:text-gray-300 text-sm transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-600 text-sm">{t.footer.copyright}</p>
+          <p className="text-gray-600 text-xs">{t.footer.tagline}</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
